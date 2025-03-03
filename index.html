@@ -3,23 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>静态导航网站</title>
-    <link rel="stylesheet" href="style.css">
+    <title>我的个人网站</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+        }
+        .about, .projects, .contact {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #333;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>欢迎来到我的导航网站</h1>
-    </header>
-    <nav>
+
+<header>
+    <h1>欢迎来到我的个人网站</h1>
+    <p>这里是我的个人展示与项目展示</p>
+</header>
+
+<nav>
+    <a href="#about">关于我</a>
+    <a href="#projects">我的项目</a>
+    <a href="#contact">联系我</a>
+</nav>
+
+<div class="container">
+    <!-- 关于我 -->
+    <section id="about" class="about">
+        <h2>关于我</h2>
+        <p>你好！我是[你的名字]，一名热爱编程和技术的开发者。我专注于[你擅长的技术栈，例如：前端开发、机器学习、数据分析等]，并且一直在不断学习新技术，提升自己的技能。</p>
+    </section>
+
+    <!-- 我的项目 -->
+    <section id="projects" class="projects">
+        <h2>我的项目</h2>
         <ul>
-            <li><a href="https://github.com" target="_blank">GitHub</a></li>
-            <li><a href="https://www.google.com" target="_blank">Google</a></li>
-            <li><a href="https://www.stackoverflow.com" target="_blank">StackOverflow</a></li>
+            <li><strong>项目一</strong>: 项目描述，链接到项目的GitHub仓库或演示页面。</li>
+            <li><strong>项目二</strong>: 项目描述，链接到项目的GitHub仓库或演示页面。</li>
+            <li><strong>项目三</strong>: 项目描述，链接到项目的GitHub仓库或演示页面。</li>
         </ul>
-    </nav>
-    <footer>
-        <p>© 2025 我的静态导航网站</p>
-    </footer>
+    </section>
+
+    <!-- 联系我 -->
+    <section id="contact" class="contact">
+        <h2>联系我</h2>
+        <p>你可以通过以下方式联系我：</p>
+        <ul>
+            <li>邮箱: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+            <li>GitHub: <a href="https://github.com/yourusername" target="_blank">https://github.com/yourusername</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/yourname" target="_blank">https://www.linkedin.com/in/yourname</a></li>
+        </ul>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2025 窦先生 | All Rights Reserved</p>
+</footer>
+
 </body>
 </html>
